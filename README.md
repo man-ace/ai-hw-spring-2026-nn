@@ -35,7 +35,7 @@ test accuracy of 98.78% paired with a minimal test loss of 0.0327.
 Transformer Model Details
 
 ● Layer Hierarchy: Input tensor (28x28x1) -> Conv2D patch extractor (64 filters, 7x7
-kernel, stride 7, valid padding) -> Reshape layer to sequence dimensions (16, 64) ->
+kernel) -> Reshape layer to sequence dimensions (16, 64) ->
 Lambda wrapped Multi-Head Attention (8 heads, key dimension of 64) -> Layer
 Normalization (epsilon 1e-6) -> Global Average Pooling 1D -> Dense layer (64 units,
 ReLU) -> Dense Output layer (10 units, Softmax).
